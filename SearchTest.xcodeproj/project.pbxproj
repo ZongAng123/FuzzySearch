@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		74CF987E24C90FCC00D47386 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CF987D24C90FCC00D47386 /* AppDelegate.m */; };
-		74CF988124C90FCC00D47386 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CF988024C90FCC00D47386 /* SceneDelegate.m */; };
 		74CF988424C90FCC00D47386 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CF988324C90FCC00D47386 /* ViewController.m */; };
 		74CF988724C90FCC00D47386 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74CF988524C90FCC00D47386 /* Main.storyboard */; };
 		74CF988924C90FCD00D47386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CF988824C90FCD00D47386 /* Assets.xcassets */; };
@@ -16,6 +15,9 @@
 		74CF988F24C90FCD00D47386 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CF988E24C90FCD00D47386 /* main.m */; };
 		74CF989924C90FCE00D47386 /* SearchTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CF989824C90FCE00D47386 /* SearchTestTests.m */; };
 		74CF98A424C90FCE00D47386 /* SearchTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CF98A324C90FCE00D47386 /* SearchTestUITests.m */; };
+		74CF98B324C9102700D47386 /* NSString+Transform.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CF98B224C9102700D47386 /* NSString+Transform.m */; };
+		74CF98B624C9107B00D47386 /* DataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CF98B524C9107B00D47386 /* DataHelper.m */; };
+		74CF98B924C9109B00D47386 /* ConatctModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CF98B824C9109B00D47386 /* ConatctModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +41,6 @@
 		74CF987924C90FCC00D47386 /* SearchTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74CF987C24C90FCC00D47386 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		74CF987D24C90FCC00D47386 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		74CF987F24C90FCC00D47386 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		74CF988024C90FCC00D47386 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		74CF988224C90FCC00D47386 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		74CF988324C90FCC00D47386 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		74CF988624C90FCC00D47386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +54,12 @@
 		74CF989F24C90FCE00D47386 /* SearchTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74CF98A324C90FCE00D47386 /* SearchTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchTestUITests.m; sourceTree = "<group>"; };
 		74CF98A524C90FCE00D47386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74CF98B124C9102700D47386 /* NSString+Transform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Transform.h"; sourceTree = "<group>"; };
+		74CF98B224C9102700D47386 /* NSString+Transform.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Transform.m"; sourceTree = "<group>"; };
+		74CF98B424C9107B00D47386 /* DataHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataHelper.h; sourceTree = "<group>"; };
+		74CF98B524C9107B00D47386 /* DataHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataHelper.m; sourceTree = "<group>"; };
+		74CF98B724C9109B00D47386 /* ConatctModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConatctModel.h; sourceTree = "<group>"; };
+		74CF98B824C9109B00D47386 /* ConatctModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConatctModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,10 +112,14 @@
 			children = (
 				74CF987C24C90FCC00D47386 /* AppDelegate.h */,
 				74CF987D24C90FCC00D47386 /* AppDelegate.m */,
-				74CF987F24C90FCC00D47386 /* SceneDelegate.h */,
-				74CF988024C90FCC00D47386 /* SceneDelegate.m */,
 				74CF988224C90FCC00D47386 /* ViewController.h */,
 				74CF988324C90FCC00D47386 /* ViewController.m */,
+				74CF98B724C9109B00D47386 /* ConatctModel.h */,
+				74CF98B824C9109B00D47386 /* ConatctModel.m */,
+				74CF98B424C9107B00D47386 /* DataHelper.h */,
+				74CF98B524C9107B00D47386 /* DataHelper.m */,
+				74CF98B124C9102700D47386 /* NSString+Transform.h */,
+				74CF98B224C9102700D47386 /* NSString+Transform.m */,
 				74CF988524C90FCC00D47386 /* Main.storyboard */,
 				74CF988824C90FCD00D47386 /* Assets.xcassets */,
 				74CF988A24C90FCD00D47386 /* LaunchScreen.storyboard */,
@@ -267,10 +277,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74CF98B924C9109B00D47386 /* ConatctModel.m in Sources */,
+				74CF98B624C9107B00D47386 /* DataHelper.m in Sources */,
 				74CF988424C90FCC00D47386 /* ViewController.m in Sources */,
 				74CF987E24C90FCC00D47386 /* AppDelegate.m in Sources */,
+				74CF98B324C9102700D47386 /* NSString+Transform.m in Sources */,
 				74CF988F24C90FCD00D47386 /* main.m in Sources */,
-				74CF988124C90FCC00D47386 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +454,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H33HD9SGH2;
 				INFOPLIST_FILE = SearchTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +472,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H33HD9SGH2;
 				INFOPLIST_FILE = SearchTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
